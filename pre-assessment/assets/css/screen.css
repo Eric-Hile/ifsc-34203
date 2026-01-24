@@ -67,6 +67,12 @@ body {
 #content {
 	margin: 20px;
 }
+.alert {
+background-color: yellow;
+color: blue;
+
+}
+
 #content p {
 	margin-top: 5px;
 	margin-bottom: 15px;
