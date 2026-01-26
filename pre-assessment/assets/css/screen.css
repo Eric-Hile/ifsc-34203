@@ -88,3 +88,11 @@ body {
   margin-right: 20px;
   margin-left: 20px;
 }
+h2, h3, h4 {
+  background-color: orange;
+}
+figure {
+  float: right;
+  border: #000, 2px;
+  
+}
