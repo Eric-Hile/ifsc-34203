@@ -24,6 +24,7 @@ main {
   width: 80vw;
   margin: 20px auto;
   border: 1px solid #000;
+  display: grid;
 }
 
 header.primary,
