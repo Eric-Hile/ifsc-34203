@@ -35,6 +35,39 @@
         grid-template-rows: auto;
         padding: 20px;
       }
+      header.primary {
+        /*display: grid;*/
+        grid-column-start: 1;
+        grid-column-end: 13;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
+
+      #content {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+      #blog {
+        grid-column-start: 7;
+        grid-column-end: 13;
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+      aside.post {
+        grid-column-start: 1;
+        grid-column-end: 13;
+        grid-row-start: 4;
+        grid-row-end: 5;
+      }
+      footer.primary {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 13;
+        grid-row-start: 5;
+        grid-row-end: 6;
+      }
     </style>
   </head>
 
@@ -77,7 +110,7 @@
         </p>
         <footer>Section Footer</footer>
       </section>
-      <aside class="primary">
+      <aside class="post">
         <h2>Aside</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia non
