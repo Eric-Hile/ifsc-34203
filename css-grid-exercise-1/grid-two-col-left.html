@@ -31,6 +31,41 @@
         gap: 20px;
         max-width: 80vw;
         margin: 20px auto;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+        padding: 20px;
+      }
+      header.primary {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 13;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
+      aside.post {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 6;
+      }
+      #content {
+        grid-column-start: 4;
+        grid-column-end: 13;
+        grid-row-start: 2;
+        grid-row-end: 3;
+      }
+      #blog {
+        grid-column-start: 4;
+        grid-column-end: 13;
+        grid-row-start: 3;
+        grid-row-end: 6;
+      }
+      footer.primary {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 13;
+        grid-row-start: 6;
+        grid-row-end: 7;
       }
     </style>
   </head>
@@ -74,7 +109,7 @@
         </p>
         <footer>Section Footer</footer>
       </section>
-      <aside>
+      <aside class="post">
         <h2>Aside</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia non
