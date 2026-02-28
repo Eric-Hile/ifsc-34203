@@ -2,37 +2,36 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-      /*  ---------------Box Sizing-----------------  */
-      html {
-        box-sizing: border-box;
-      }
+/*  ---------------Box Sizing-----------------  */
+html {
+  box-sizing: border-box;
+}
 
-      *,
-      *:before,
-      *:after {
-        box-sizing: inherit;
-      }
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
-      /* Starter */
-      main > * {
-        font-family:
-          Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro, sans-serif;
-        font-weight: normal;
-        background-color: #c0c0c0;
-        border-radius: 10px;
-        padding: 20px;
-      }
+/* Starter */
+main > * {
+  font-family:
+    Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro, sans-serif;
+  font-weight: normal;
+  background-color: #c0c0c0;
+  border-radius: 10px;
+  padding: 20px;
+}
 
-      main {
-        display: grid;
-        gap: 20px;
-        max-width: 80vw;
-        margin: 20px auto;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: auto;
-        padding: 20px;
-      }
-
+main {
+  display: grid;
+  gap: 20px;
+  max-width: 80vw;
+  margin: 20px auto;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  padding: 20px;
+}
 
 html {
   color: #222;
@@ -97,18 +96,30 @@ fieldset {
 textarea {
   resize: vertical;
 }
-.primary {
-  background-color: rgb(152, 161, 168);
-  margin: 40px;
-  padding: 10px;
+header.primary {
+  background-image: url(../img/Mobile\ Web\ Development\ Header\ Image\ optimized\ to\ 40kb.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 240px;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+h1 {
+  color: yellow;
+  grid-column-start: 4;
+  grid-column-end: 8;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 .primary :hover {
   background-color: mediumseagreen;
 }
 
-@media screen and (max-width:600px) {
-  header.primary{
+@media screen and (max-width: 600px) {
+  header.primary {
     background-color: red;
   }
-  
 }
