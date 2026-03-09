@@ -1,8 +1,30 @@
+/*CSS custom Properties */
+:root{
+Background: #0F172A
+Primary:    #1E293B
+Accent:     #22C55E
+Text:       #E2E8F0
+Secondary:  #334155
+
+ /* --main-bg-color: #efefef;
+  --primary-type-color: #222222;
+  --accent-color-1: #999999;
+  */
+}
+
+
 html {
   box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
+
+/* ------ Typography -------*/
+body {
+  font-family: "Roboto", sans-serif;
+}
+
