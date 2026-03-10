@@ -1,10 +1,10 @@
 /*CSS custom Properties */
 :root{
-Background: #0F172A
-Primary:    #1E293B
-Accent:     #22C55E
-Text:       #E2E8F0
-Secondary:  #334155
+--main-bg-color: #0F172A
+--primary-type-color: #1E293B
+--accent-color-1: #22C55E
+--text: #E2E8F0
+--secondary: #334155
 
  /* --main-bg-color: #efefef;
   --primary-type-color: #222222;
@@ -23,8 +23,42 @@ html {
   box-sizing: inherit;
 }
 
+/* ------ Helper Classes -------*/
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; /* 1 */
+}
+
+
 /* ------ Typography -------*/
 body {
   font-family: "Roboto", sans-serif;
 }
 
+/* ------ Fluid Images -------*/
+
+img {
+  max-width: 100%;
+}
+
+/* ------ Design Time -------*/
+
+.container {
+  width:420px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+/* ------ Global Styles -------*/
+body {
+  background: var(--main-bg-color);
+  color: var(--primary-type-color);
+  line-height: 1.6;
+}
