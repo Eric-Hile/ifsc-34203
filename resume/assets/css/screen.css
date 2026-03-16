@@ -1,17 +1,21 @@
 /*CSS custom Properties */
-:root{
---main-bg-color: #0F172A
---primary-type-color: #1E293B
---accent-color-1: #22C55E
---text: #E2E8F0
---secondary: #334155
+:root {
+  /*-----background-----*/
+  --main-bg-color: #1f2937;
+  --primary-type-color: #273445;
+  /*------text---------*/
+  --text: #e0e7ff;
+  --secondary: #334155;
+  /*-------accent------*/
+  --accent-color-1: #22c55e;
+  /*------border-------*/
+  --border: #475569;
 
- /* --main-bg-color: #efefef;
+  /* --main-bg-color: #efefef;
   --primary-type-color: #222222;
   --accent-color-1: #999999;
   */
 }
-
 
 html {
   box-sizing: border-box;
@@ -36,7 +40,6 @@ html {
   white-space: nowrap; /* 1 */
 }
 
-
 /* ------ Typography -------*/
 body {
   font-family: "Roboto", sans-serif;
@@ -51,14 +54,63 @@ img {
 /* ------ Design Time -------*/
 
 .container {
-  width:420px;
+  width: 420px;
+  padding: 20px;
   margin: 0 auto;
-  background: rgba(0, 0, 0, 0.15);
+
+  background-color: var(--main-bg-color);
 }
 
 /* ------ Global Styles -------*/
 body {
-  background: var(--main-bg-color);
-  color: var(--primary-type-color);
+  /*background: var(--main-bg-color); */ 
+  
+  color: var(--text);
   line-height: 1.6;
+}
+
+#top {
+  background-color: var(--primary-type-color);
+}
+nav {
+  padding: 1px;
+}
+nav ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 20px 20px 0px 20px;
+}
+nav li {
+  list-style-type: none;
+}
+
+nav a:link, nav a:visited {
+  display: block;
+  padding: 8px 16px;
+  border: 1px solid var(--border);
+  text-align: center;
+  text-decoration: none;
+  color: var(--primary-type-color);
+  text-transform: uppercase;
+  font-size: 0.75em;
+  background: var(--secondary);
+  transition: background-color 0.5s ease;
+  color: #ffffff;
+}
+
+
+
+/*Base CSS*/
+
+
+.row{
+  display:grid;
+  grid-template-columns: 1fr;
+  gap:20px;
+}
+
+@media screen and (min-width:768px){
+  .row{
+     grid-template-columns:1fr 1fr;
+  }
 }
