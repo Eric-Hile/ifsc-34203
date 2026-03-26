@@ -8,6 +8,7 @@
   --secondary: #334155;
   /*-------accent------*/
   --accent-color-1: #22c55e;
+  --accent-color-2: rgb(206, 246, 206);
   /*------border-------*/
   --border: #475569;
 
@@ -28,6 +29,7 @@ html {
 }
 
 /* ------ Helper Classes -------*/
+/*-------Hides the personal info from schema----*/
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -54,7 +56,7 @@ img {
 /* ------ Design Time -------*/
 
 .container {
-  width: 420px;
+  /*width: 420px;*/
   padding: 20px;
   margin: 0 auto;
 
@@ -63,8 +65,8 @@ img {
 
 /* ------ Global Styles -------*/
 body {
-  /*background: var(--main-bg-color); */ 
-  
+  /*background: var(--main-bg-color); */
+
   color: var(--text);
   line-height: 1.6;
 }
@@ -84,7 +86,7 @@ nav li {
   list-style-type: none;
 }
 
-nav a:link, nav a:visited {
+nav a:link {
   display: block;
   padding: 8px 16px;
   border: 1px solid var(--border);
@@ -97,8 +99,20 @@ nav a:link, nav a:visited {
   transition: background-color 0.5s ease;
   /*color: #ffffff;*/
 }
+nav a:visited {
+   display: block;
+  padding: 8px 16px;
+  border: 1px solid var(--border);
+  text-align: center;
+  text-decoration: none;
+  color: var(--accent-color-2);
+  text-transform: uppercase;
+  font-size: 0.75em;
+  background: var(--secondary);
+  transition: background-color 0.5s ease;
+}
 
-nav a:hover{
+nav a:hover {
   background-color: var(--accent-color-1);
 }
 
@@ -106,23 +120,23 @@ a:link {
   color: var(--accent-color-1);
 }
 a:visited {
-  color: var(--border);
+  color: var(--accent-color-2);
 }
 
 .page-title {
   background-color: var(--primary-type-color);
 }
 
-.about{
+.about {
   background-color: var(--primary-type-color);
 }
 
 .details {
-    background-color: var(--primary-type-color);
+  background-color: var(--primary-type-color);
 }
 
 .related-links {
-    background-color: var(--primary-type-color);
+  background-color: var(--primary-type-color);
 }
 
 #skills {
@@ -138,22 +152,28 @@ a:visited {
 
 /*---Base CSS---*/
 
-
-.row{
+/*.row{
   display:grid;
   grid-template-columns: 1fr;
   gap:20px;
-}
-/*----Mobile First---*/
-@media screen and (min-width:768px){
-  .row{
-     grid-template-columns:1fr 1fr;
+}*/
+
+/*------Media Querries---*/
+/*----Mobile First default---*/
+
+/*------Tablet breakpoint-----*/
+@media screen and (min-width: 768px) {
+  .container{
+    background-color: red;
+  }
+  .row {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
-/*----Tablet breakpoint---*/
-@media screen and (min-width:992px){
-  .row{
-     grid-template-columns:repeat(4, 1fr);
+/*----Desktop breakpoint---*/
+@media screen and (min-width: 992px) {
+  .row {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
