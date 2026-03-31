@@ -59,7 +59,6 @@ img {
   /*width: 420px;*/
   padding: 20px;
   margin: 0 auto;
-
   background-color: var(--main-bg-color);
 }
 
@@ -206,14 +205,12 @@ main h1:after {
 
 /*------Tablet breakpoint-----*/
 @media screen and (min-width: 768px) {
-  .container{
-    /*background-color: red;*/
 
-  }
   nav ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 20px 20px 20px 20px;
+}
 }
 
 /*----Desktop breakpoint---*/
